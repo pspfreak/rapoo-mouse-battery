@@ -1,7 +1,10 @@
 # Rapoo mouse battery
 
-A small Windows tray app for Rapoo wireless mice on the 2.4 GHz dongle (developed against a
-mouse with dongle `24AE:1413`). It works without Rapoo's own software.
+A small Windows tray app for Rapoo wireless mice on the 2.4 GHz dongle. It works without Rapoo's own
+software.
+
+**Known working:** Rapoo VT7 (dongle `24AE:1413`). Other models may work but are untested; they may use
+different reports or addresses.
 
 - Battery percentage as the tray icon, with low (20%) and critical (10%) notifications
 - Click the icon for a popup with battery level and DPI stage selection
@@ -63,6 +66,10 @@ mouse answers only over USB (the dongle reports busy), so the app talks to the w
 
 Bytes 0x0000-0x0FFF of the EEPROM are static configuration; nothing in that range changes with charging.
 The 513-byte `FF00:0001` interface is probably firmware update and is deliberately left alone.
+
+## License
+
+[MIT](LICENSE)
 
 ## Tools
 
